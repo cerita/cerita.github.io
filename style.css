@@ -1,24 +1,74 @@
 @charset "utf-8";
 /* CSS Document */
 
-#container {
-	margin:50px auto;
-	width:500px;
+body {
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#container {
+	width:80%;
+	max-width:920px;
+	margin: 0 auto;
+}
+
+/** HEADER 
+****************/
+.main-header h1,
+.main-header a {
+	text-decoration:none;
+	color:#4CBB17; /*Kelly Green*/
 	text-align:center;
-	}
-	
-	
-#links a {
+}
+
+.main-header h1 {
+	font-size:3em;
+	letter-spacing:.3em;
+	text-transform: uppercase;
+}
+
+#cerita {
+	font-size:1.5em;
+	color:#4CBB17; /*Kelly Green*/
+}
+
+
+
+/** NAV 
+****************/
+nav {
+	background:#4CBB17; /*Kelly Green*/
+	text-align:center;
+	padding-top:.5em;
+	padding-bottom:.1em;
+}
+nav a {
+	text-decoration:none;
+	text-transform:uppercase;
+	color:white;
+}
+
+
+/** SECTION 
+****************/
+section {
+	border: dotted 3px pink;
+	padding:20px;
+	margin-top:15px;
+}
+
+
+section a {
+	color:#4CBB17; /*Kelly Green*/
+	font-weight:bold;
 	text-decoration:none;
 }
 
-#links li {
-	list-style:none;
-	display:inline;
-	
-	display:inline-block;
-	width:24%;
+/** FOOTER 
+****************/
+footer {
+	color:#4CBB17; /*Kelly Green*/
+	background-color:#257300;
 	text-align:center;
-	
 }
+
+
