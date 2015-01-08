@@ -39,12 +39,13 @@ nav {
 	background:#4CBB17; /*Kelly Green*/
 	text-align:center;
 	padding-top:.5em;
-	padding-bottom:.1em;
+	padding-bottom:.5em;
 }
 nav a {
 	text-decoration:none;
 	text-transform:uppercase;
 	color:white;
+	padding: 1em;
 }
 
 
@@ -54,6 +55,7 @@ section {
 	border: dotted 3px pink;
 	padding:20px;
 	margin-top:15px;
+	margin-bottom:15px;
 }
 
 
@@ -70,9 +72,25 @@ section li {
 /** FOOTER 
 ****************/
 footer {
-	color:#4CBB17; /*Kelly Green*/
-	background-color:#257300;
+	color:#eee; 
+	background-color:green;/*Kelly Green*/
 	text-align:center;
+	padding-top:.5em;
+	padding-bottom:.5em;
 }
 
+footer a {
+	text-decoration:none;
+	color: #eee;
+}
 
+footer ul {
+	list-style:none;
+	padding:0;
+}
+
+footer li {
+	display:inline;
+	text-transform:uppercase;
+	padding-right:2em;
+}
