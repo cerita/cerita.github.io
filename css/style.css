@@ -48,6 +48,10 @@ nav a {
 	padding: 1em;
 }
 
+nav a:hover {
+	text-decoration:underline;	
+}
+
 
 /** SECTION 
 ****************/
@@ -63,6 +67,10 @@ section a {
 	color:#4CBB17; /*Kelly Green*/
 	font-weight:bold;
 	text-decoration:none;
+}
+
+section a:hover {
+	text-decoration:underline;	
 }
 
 section li {
@@ -82,6 +90,10 @@ footer {
 footer a {
 	text-decoration:none;
 	color: #eee;
+}
+
+footer a:hover {
+	text-decoration:underline;	
 }
 
 footer ul {
