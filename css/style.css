@@ -2,107 +2,105 @@
 /* CSS Document */
 
 body {
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 
-.container {
-	width:80%;
-	max-width:920px;
+
+
+#container {
+	width:90%;
 	margin: 0 auto;
 }
 
-/** HEADER 
-****************/
-.main-header h1,
-.main-header a {
-	text-decoration:none;
-	color:#4CBB17; /*Kelly Green*/
+
+
+/*******************
+Intro Loader
+*******************/
+
+.intro-content {
 	text-align:center;
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: white;
 }
 
-.main-header h1 {
-	font-size:3em;
-	letter-spacing:.3em;
-	text-transform: uppercase;
-}
-
-#cerita {
-	font-size:1.5em;
-	color:#4CBB17; /*Kelly Green*/
-}
-
-
-
-/** NAV 
-****************/
-nav {
-	background:#4CBB17; /*Kelly Green*/
-	text-align:center;
-	padding-top:.5em;
-	padding-bottom:.5em;
-}
-nav a {
+.intro-content a {
 	text-decoration:none;
-	text-transform:uppercase;
-	color:white;
 	padding: 1em;
 }
 
-nav a:hover {
-	text-decoration:underline;	
+.intro-content button {
+	height:50px;
+	width:50px;
+	border-radius:20%;
 }
 
 
-/** SECTION 
-****************/
-section {
-	border: dotted 3px pink;
-	padding:20px;
-	margin-top:15px;
-	margin-bottom:15px;
+/*******************
+Main Content
+*******************/
+
+#wrapper {
+	display:none;
+	margin: 0 auto;
 }
 
-
-section a {
-	color:#4CBB17; /*Kelly Green*/
-	font-weight:bold;
-	text-decoration:none;
+/*******************
+Headers
+*******************/
+h1 {
+	font-size:3em;	
 }
 
-section a:hover {
-	text-decoration:underline;	
+h2 {
+	font-size:2em;
+	color:#4CBB17;
 }
 
-section li {
-	list-style:none;
+h3 {
+	font-size:1.5em;
+	color:#4CBB17;
 }
 
-/** FOOTER 
-****************/
-footer {
-	color:#eee; 
-	background-color:green;/*Kelly Green*/
+#wrapper h1 {
+	text-align:center;	
+}
+
+/*******************
+Navigation
+*******************/
+
+nav {
+	background-color:#4CBB17 ;
+	padding: 1em;
+	margin: 1em auto;
 	text-align:center;
-	padding-top:.5em;
-	padding-bottom:.5em;
 }
 
-footer a {
+nav a {
 	text-decoration:none;
-	color: #eee;
+	color:white;
+	padding:1em;
 }
 
-footer a:hover {
+nav a:hover{
 	text-decoration:underline;	
 }
 
-footer ul {
-	list-style:none;
-	padding:0;
+
+/*******************
+Tabs
+*******************/
+
+.tabby {
+	min-height:360px;
+	display:none;
+	border: dashed;
+	border-color: rgba(255,168,222,1.00);	
+	padding: 5%;
 }
 
-footer li {
-	display:inline;
-	text-transform:uppercase;
-	padding-right:2em;
+.active {
+	display:block;	
 }
