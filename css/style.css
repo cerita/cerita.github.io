@@ -67,6 +67,10 @@ h3 {
 	text-align:center;	
 }
 
+.tabby a {
+	color:#4CBB17;
+}
+
 /*******************
 Navigation
 *******************/
@@ -104,3 +108,28 @@ Tabs
 .active {
 	display:block;	
 }
+
+
+#contact a{
+	padding-right:1em;
+}
+
+/*******************
+Smaller Screens
+*******************/
+@media (max-width:480px) {
+
+	.tabby {
+		display:block;
+		border:none;
+}
+
+
+
+
+
+
+
+
+
+
