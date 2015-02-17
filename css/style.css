@@ -126,8 +126,9 @@ Me
 /*******************
 Experience
 *******************/
-.position {
-
+.jobdesc {
+	list-style:square;
+	margin: 1% 2%;
 }
 
 
