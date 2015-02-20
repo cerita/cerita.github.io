@@ -1,20 +1,16 @@
 // JavaScript Document
-console.log("Hello there!");
-
+console.log("Have any questions or comments about my code or something you see? I'd love to hear it. Feel free to shoot me an e-mail :)");
+console.log("-Cerita");
 
 $(document).ready( function() {
-	$("#more").click(function() {
-		$("#intro").hide();
-		$("#wrapper").fadeIn();
+	$("a").hover(function() {
+		$(this).animate({"color": "green",
+					"font-weight": "bold",
+					"font-size": "1.5em"});
+	}, function() {
+		$(this).animate({"color": "#4cbb17",
+					"font-weight":"normal",
+					"font-size": "1em"});
 	});
-	
-	
-	$('nav a').click(function() {
-		var tab = $(this).attr("href");
-		console.log(tab);	
-		$('.active').removeClass('active');
-		$(tab).addClass('active');
-	});
-	
 	
 });
