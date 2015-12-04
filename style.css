@@ -1,27 +1,52 @@
-html {
-	font-family:'Open Sans', sans-serif;
-	font-size: 3em;
-	text-transform: uppercase;
-	width: 100%;
-	height:100%;
+
+
+html,body {
+    height:100%;
+    width:100%;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    color:#303133;
+    background-color:floralwhite;
+}
+
+ul {
+    margin-bottom:1em;
+}
+
+.btn {
+    background-color: floralwhite;
 }
 
 
 h1 {
-	font-size: 6em;
-	color:#610BA1;
+    font-family: "Arvo", serif;
+    font-size:3.5em;
 }
 
-h1:hover {
-	opacity: 0.5
+.cerita {
+    color:#8956f8;
+    font-weight: 700;
 }
 
-a {
-	font-family: 'Source Code Pro', serif;
-	color: black;
+.cerita:hover {
+    color:#FE11ED;
 }
 
-a:hover {
-	text-decoration: none;
-	opacity: 0.5
+
+#about {
+		min-height: 100%;
+		padding-top: 15%;
 }
+
+.btn {
+    border-style:none;
+}
+
+.btn:hover {
+    color:#8956f8;
+    background-color:floralwhite;
+}
+
