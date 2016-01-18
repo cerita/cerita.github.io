@@ -1,0 +1,116 @@
+$font: 'Cabin', Helvetica, Arial, sans-serif;
+$green: #bada55;
+$purple:#a55bad;
+$gray: #eee;
+
+
+/****** Resets & Defaults ******/
+html, body {height:100%; width:100%;}
+body {
+    background: #eee;
+    font-family:$font;
+    padding-top: 60px;
+    background-color:#fff;    
+    text-align:center;
+}
+section {
+    min-height:60%;
+    padding-top:4%;
+    padding-bottom:4%;
+}
+
+#about, #projects {
+    background-color:$gray;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 43px;
+    margin: 0 0 23px 0;
+    }
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 0 23px 0;
+    }
+p, a {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+/****** Nav Bar ******/
+.navbar {
+    background-color:rgba(255,255,255,0.8);
+}
+
+
+
+/****** Header ******/
+header{
+    position:relative;
+    width:100%;
+    min-height:75%;
+
+    
+    .intro {
+        width:40%;
+        margin:15% auto;
+    }
+}
+
+/****** About ******/
+#about {
+    position:relative;
+}
+
+/****** Skills ******/
+.skill {
+    margin-top:2%;
+    
+    .skill-icon {
+        height:150px;
+        width:150px;
+        border-radius: 50%;
+        border: 2px solid #333;
+        background-color:$gray;
+        
+        p {
+            vertical-align: middle;
+            line-height: 150px;
+        }
+    }
+}
+
+/****** Projects ******/
+
+
+
+
+/****** Contact ******/
+#contact {
+    
+    color:#fff;
+    background-color: #333;
+    
+    .contact-icons {
+        margin-top:2%;
+        
+        a{
+            color:#fff;
+        }
+        
+        i {
+            font-size:5em;
+            margin-bottom:.6em;
+        }
+    }
+}

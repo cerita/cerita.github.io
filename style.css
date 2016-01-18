@@ -1,52 +1,87 @@
-
-
-html,body {
-    height:100%;
-    width:100%;
-}
+/****** Resets & Defaults ******/
+html, body {
+  height: 100%;
+  width: 100%; }
 
 body {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    color:#303133;
-    background-color:floralwhite;
-}
+  background: #eee;
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
+  padding-top: 60px;
+  background-color: #fff;
+  text-align: center; }
 
-ul {
-    margin-bottom:1em;
-}
+section {
+  min-height: 60%;
+  padding-top: 4%;
+  padding-bottom: 4%; }
 
-.btn {
-    background-color: floralwhite;
-}
-
+#about, #projects {
+  background-color: #eee; }
 
 h1 {
-    font-family: "Arvo", serif;
-    font-size:3.5em;
-}
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 46px;
+  font-size: 43px;
+  margin: 0 0 23px 0; }
 
-.cerita {
-    color:#8956f8;
-    font-weight: 700;
-}
+h2 {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 23px 0; }
 
-.cerita:hover {
-    color:#FE11ED;
-}
+p, a {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  margin: 0 0 23px 0; }
 
+/****** Nav Bar ******/
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8); }
 
+/****** Header ******/
+header {
+  position: relative;
+  width: 100%;
+  min-height: 75%; }
+  header .intro {
+    width: 40%;
+    margin: 15% auto; }
+
+/****** About ******/
 #about {
-		min-height: 100%;
-		padding-top: 15%;
-}
+  position: relative; }
 
-.btn {
-    border-style:none;
-}
+/****** Skills ******/
+.skill {
+  margin-top: 2%; }
+  .skill .skill-icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: #eee; }
+    .skill .skill-icon p {
+      vertical-align: middle;
+      line-height: 150px; }
 
-.btn:hover {
-    color:#8956f8;
-    background-color:floralwhite;
-}
+/****** Projects ******/
+/****** Contact ******/
+#contact {
+  color: #fff;
+  background-color: #333; }
+  #contact .contact-icons {
+    margin-top: 2%; }
+    #contact .contact-icons a {
+      color: #fff; }
+    #contact .contact-icons i {
+      font-size: 5em;
+      margin-bottom: .6em; }
 
+/*# sourceMappingURL=style.css.map */
