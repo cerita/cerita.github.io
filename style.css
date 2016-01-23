@@ -6,17 +6,14 @@ html, body {
 body {
   background: #eee;
   font-family: "Cabin", Helvetica, Arial, sans-serif;
-  padding-top: 60px;
   background-color: #fff;
-  text-align: center; }
+  text-align: center;
+  color: #333; }
 
 section {
   min-height: 60%;
   padding-top: 4%;
   padding-bottom: 4%; }
-
-#about, #projects {
-  background-color: #eee; }
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
@@ -41,6 +38,9 @@ p, a {
   line-height: 23px;
   margin: 0 0 23px 0; }
 
+a {
+  color: #E86DA6; }
+
 /****** Nav Bar ******/
 .navbar {
   background-color: rgba(255, 255, 255, 0.8); }
@@ -49,29 +49,46 @@ p, a {
 header {
   position: relative;
   width: 100%;
-  min-height: 75%; }
+  min-height: 90%;
+  background-image: url(assets/wallpaper_002-somethingpeach.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0; }
   header .intro {
     width: 40%;
-    margin: 15% auto; }
+    margin: 25% auto; }
 
 /****** About ******/
 #about {
-  position: relative; }
-
-/****** Skills ******/
-.skill {
-  margin-top: 2%; }
-  .skill .skill-icon {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    background-color: #eee; }
-    .skill .skill-icon p {
-      vertical-align: middle;
-      line-height: 150px; }
+  position: relative;
+  background-color: #eee; }
 
 /****** Projects ******/
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  padding: 0; }
+
+.project-hover {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 2;
+  color: white;
+  font-size: 17px;
+  padding-top: 25%; }
+  .project-hover i {
+    font-size: 3em;
+    margin-bottom: .5em; }
+
+.caption {
+  background-color: #eee;
+  margin: 0;
+  padding: 0; }
+
 /****** Contact ******/
 #contact {
   color: #fff;

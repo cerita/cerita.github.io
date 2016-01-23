@@ -5,4 +5,14 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
-})
+    
+        $('.thumbnail').hover(
+        function(){
+            $(this).find('.project-hover').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.project-hover').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+
+});

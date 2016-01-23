@@ -2,6 +2,7 @@ $font: 'Cabin', Helvetica, Arial, sans-serif;
 $green: #bada55;
 $purple:#a55bad;
 $gray: #eee;
+$darkgray: #333;
 
 
 /****** Resets & Defaults ******/
@@ -9,9 +10,9 @@ html, body {height:100%; width:100%;}
 body {
     background: #eee;
     font-family:$font;
-    padding-top: 60px;
     background-color:#fff;    
     text-align:center;
+    color:$darkgray;
 }
 section {
     min-height:60%;
@@ -19,9 +20,6 @@ section {
     padding-bottom:4%;
 }
 
-#about, #projects {
-    background-color:$gray;
-}
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
@@ -47,6 +45,10 @@ p, a {
     margin: 0 0 23px 0;
     }
 
+a {
+    color:#E86DA6;
+}
+
 /****** Nav Bar ******/
 .navbar {
     background-color:rgba(255,255,255,0.8);
@@ -58,40 +60,58 @@ p, a {
 header{
     position:relative;
     width:100%;
-    min-height:75%;
+    min-height:90%;
+    background-image: url(assets/wallpaper_002-somethingpeach.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    top:0;
 
     
     .intro {
         width:40%;
-        margin:15% auto;
+        margin:25% auto;
     }
 }
 
 /****** About ******/
 #about {
     position:relative;
+    background-color:$gray;
 }
 
-/****** Skills ******/
-.skill {
-    margin-top:2%;
+
+/****** Projects ******/
+ 
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+    padding:0;
+}
+ 
+.project-hover {
+    position:absolute;
+    top:0;
+    background: rgba(0, 0, 0, .7);
+    width:100%;
+    height:100%;
+    display: none;
+    z-index:2;
     
-    .skill-icon {
-        height:150px;
-        width:150px;
-        border-radius: 50%;
-        border: 2px solid #333;
-        background-color:$gray;
-        
-        p {
-            vertical-align: middle;
-            line-height: 150px;
-        }
+    color:white;
+    font-size:17px;
+    padding-top:25%;
+    
+    i {
+        font-size: 3em;
+        margin-bottom:.5em;
     }
 }
 
-/****** Projects ******/
-
+.caption {
+    background-color: $gray;
+    margin:0;
+    padding:0;
+}
 
 
 
@@ -99,7 +119,7 @@ header{
 #contact {
     
     color:#fff;
-    background-color: #333;
+    background-color: $darkgray;
     
     .contact-icons {
         margin-top:2%;
