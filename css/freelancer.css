@@ -27,6 +27,9 @@ h6 {
   text-transform: uppercase;
   font-weight: 700; }
 
+.avi {
+  max-width: 300px; }
+
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -181,8 +184,7 @@ section.success {
   background: #BC87BF;
   color: white; }
   section.success a {
-    color: #C1DDDB;
-    text-decoration: underline; }
+    color: #C1DDDB; }
 
 @media (max-width: 767px) {
   section {

@@ -43,6 +43,10 @@ h6 {
     font-weight: 700;
 }
 
+.avi {
+    max-width: 300px;
+}
+
 hr.star-light,
 hr.star-primary {
     padding: 0;
@@ -230,7 +234,6 @@ section.success {
     color: white;
     a {
         color:$url;
-        text-decoration: underline;
     }
 }
 
