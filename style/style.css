@@ -1,0 +1,93 @@
+html {
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1 {
+  font-weight: bold; }
+
+a {
+  cursor: pointer;
+  color: $color-splash;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  color: #1abc9c;
+  opacity: 0.9; }
+
+hr {
+  border-top: 5px solid #1abc9c;
+  width: 80px;
+  padding-bottom: 20px; }
+
+.colour-splash {
+  color: #BC87BF; }
+
+.section-primary span {
+  color: #1abc9c;
+  font-weight: bolder;
+  opacity: 1; }
+
+/* Main/Intro */
+.section-image {
+  background: #151515 url(../img/desktop-space.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  display: table; }
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  opacity: .7; }
+
+.intro {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  }
+
+.intro h1 {
+  font-size: 84px; }
+
+.section-image span {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  padding: 0 10px;
+  font-weight: 100; }
+
+
+.section-image p {
+  font-weight: lighter;
+  opacity: 0.9; }
+
+/* Social Icons */
+.social {
+  margin: 0 10px;
+  padding-top: 1.3em;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em; }
+
+.social a {
+  color: white;
+  text-decoration: none;
+  padding: 2em; }
+
+.social a:hover {
+  opacity: 0.6;
+  color: #BC87BF; }
+
+/*# sourceMappingURL=style.css.map */
