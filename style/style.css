@@ -267,6 +267,18 @@ form .row:first-child .floating-label-form-group {
     #contact a:hover {
       color: #ffb321; }
 
+#contact ul li {
+  float: left;
+  padding-left: 10px;
+  list-style-type: none; }
+
+.list-inline {
+  display: flex; }
+
+.list-inline li {
+  flex: 1;
+  text-align: center; }
+
 /******** FOOTER ********/
 footer {
   color: #fff; }
