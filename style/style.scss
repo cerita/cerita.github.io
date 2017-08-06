@@ -345,6 +345,21 @@ form .row:first-child .floating-label-form-group {
   }
 }
 
+#contact ul li {
+  float: left;
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+.list-inline {
+  display: flex;
+}
+
+.list-inline li {
+  flex: 1;
+  text-align: center;
+}
+
 
 /******** FOOTER ********/
 
