@@ -1,0 +1,184 @@
+$navs: #eb0185;
+$purple: rgba(110, 71, 162, 0.9);
+$darkpurple: darken($purple, 10%);
+$gray: #EEE5FB;
+$black:#27153E;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+{
+    font-family: "Open Sans", Arial, sans-serif;
+    color: $black;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 100px 0;
+    h1 {
+        font-size: 3.2em;
+    }
+    h2 {
+        font-size: 2.8em;
+    }
+}
+
+
+.btn {
+	background-color: $purple;
+	border-color: $purple;
+	&:hover {
+		background-color:$darkpurple;
+		border-color:$darkpurple;
+	}
+    &:focus {
+        background-color: $purple;
+        border-color: $purple;
+        color:white;
+    }
+}
+
+.btn-outline-primary {
+	background-color:#fff;
+	border-color: $purple;
+	color:$purple;
+	&:hover {
+		background-color: darken(#fff, 3%);
+		color:$darkpurple;
+	}
+    &:focus {
+        background-color: $purple;
+        border-color: $purple;
+        color:white;
+    }
+}
+
+
+/****** NAV ******/
+
+.navbar {
+    margin: 0;
+    background-color:rgba(238, 229, 251,0.5);
+    border-color:transparent;
+    background-image:none;
+    box-shadow:none;  
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+}
+
+
+/****** Jumbotron ******/
+
+.intro {
+    min-height: 70vh;
+    background-color: $gray;
+    // background-image: url("../assets/gabriel-beaudry-93842.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        max-width: 50%;
+        margin: 0 auto;
+        padding-top: 10%;
+        h1,
+        h2 {
+            margin-bottom: 1em;
+        }
+        .btn {}
+    }
+}
+
+
+
+
+/****** Skills ******/
+
+.skill-box {
+    max-width: 450px;
+    margin: 60px auto;
+    .devicon {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 992px) {
+    .skill-box {
+        margin: 20px auto;
+    }
+}
+
+/****** Portfolio ******/
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $gray;
+}
+
+.portfolio-box {
+  &:hover {
+        .overlay {
+    opacity: 1;
+}
+    }
+}
+
+.overlay-text {
+    // color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/****** MAP ******/
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+
+/****** Contact ******/
+
+#contact {
+    a {
+    	color: #333;
+    	&:hover {
+    		color: $purple;
+    	}
+        i {
+            font-size: 5em;
+        }
+    }
+}
+
+
+/****** Footer ******/
+
+footer {
+    padding: 1em 0;
+    background-color: $gray;
+}
