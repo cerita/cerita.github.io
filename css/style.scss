@@ -137,6 +137,7 @@ section {
 
 .portfolio-box {
   &:hover {
+    cursor:pointer;
         .overlay {
     opacity: 1;
 }
