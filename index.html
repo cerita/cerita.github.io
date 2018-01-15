@@ -14,28 +14,22 @@
     <script src="https://use.fontawesome.com/fdedee30bc.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Custon JS -->
-    <script type="text/javascript" src="js/script.min.js"></script>
-    <!-- Typewriter JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
-    
+
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-faded">
+    <nav class="navbar navbar-toggleable-md fixed-top bg-faded" id="nav-bar">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">&lt; CK &gt;</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="#tools">Tools</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -48,34 +42,41 @@
     </nav>
 
     <div class="intro">
-        <div class='container  text-center'>
-            <h1 class="display-4">Cerita Kelly</h1>
-            <hr>
+        <div class='container '>
+            <h1 class="display-4">
+              <span>Cerita</span>
+              <span>Kelly</span>
+            </h1>
             <h2 id="yoSoy"></h2>
         </div>
     </div>
     <!-- End Intro-->
+
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class=' col-lg-8 mx-auto text-center'>
-                    <h2>Hey, I'm Cerita</h2>
-                    <p>I am a Front End Developer. I use HTML, CSS, and JavaScript to build pretty cool web applications. I have a B.Sc in Computer Science as well as self-taught skills. I love problem solving and watching my solutions come to life via the web.</p>
-                            <p>Looking for a developer to join your team? Take a look below.</p>
-                            <a class='btn btn-lg btn-outline-primary' href="assets/Resume_CeritaKelly.pdf" target="_blank">Resume</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="section-heading ">About</h1>
+        <div class="row">
+          <div class="col-lg-4" >
+            <img src="assets/avicerita.jpeg" class="rounded-circle img-fluid border"/>
+          </div>
+          <div class=' col-lg-6 offset-lg-2'>
+              <h2>Hey, I'm Cerita</h2>
+              <p>I am a Front End Developer that loves creating in HTML, CSS, and JavaScript. </p>
+              <p>I eearned a B.Sc in Computer Science from Saint Xavier University in 2012, which first introduced me to programming with  Java. Since then, I've had roles as a Tech Support Specialist and as a Business Analyst.
+              </p>
+              <p>
+                When I'm not working or coding, you'll find me <a href="https://ceritadoesit.wordpress.com" target="_blank">blogging</a> about coding. I also enjoy taking dance classes, playing social kickball, and video games.
+              </p>
+                      <a class='btn btn-lg' href="assets/Resume_CeritaKelly.pdf" target="_blank">Resume</a>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End About -->
-    <section id="skills">
+
+    <section id="tools">
         <div class='container'>
-        	<div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading">Skills</h2>
-                    <hr>
-                </div>
-            </div>
+            <h1 class="section-heading">Tools</h1>
             <div class="row">
                 <div class="col-lg-2 col-4 text-center">
                     <div class="skill-box">
@@ -115,19 +116,13 @@
     </section>
     <!-- End Skills -->
     <section id="portfolio">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <hr>
-                </div>
-            </div>
-            <!-- -->
+        <div class="container">
+          <h1 class="section-heading">Portfolio</h1>
             <div class="row no-gutters">
                 <div class="col-lg-6 col-sm-12 portfolio-box">
 					<img class="img-fluid image" src="assets/hex-clock.png" alt="Hexadecimal Clock">
                     <div class="overlay">
-                        <div class='overlay-text'> 
+                        <div class='overlay-text'>
     					   <h2>Hexadecimal Clock</h2>
                            <p>A hexadecimal color clock that changes color based on the current time</p>
                            <a class="portfolio-box" href="https://github.com/cerita/hex-clock" target="_blank">Repo</a> |
@@ -136,54 +131,54 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12 portfolio-box">
-                    <img class="img-fluid" src="assets/js-calculator.png" alt="JavaScript Calculator">
+                    <img class="img-fluid image" src="assets/simple-calculator.png" alt="Simple JavaScript Calculator">
                     <div class="overlay">
-                        <div class='overlay-text'> 
-                           <h2>JavaScript Calculator</h2>
-                            <p>A simple calculator created with Vanilla JS</p>
-                            <a class="portfolio-box" href="https://github.com/cerita/JavaScript-Calculator" target="_blank">Repo</a> | 
-                            <a class="portfolio-box" href="https://cerita.github.io/JavaScript-Calculator" target="_blank">Demo</a> 
+                        <div class='overlay-text'>
+                           <h2>Simple JavaScript Calculator</h2>
+                            <p>A simple calculator created with vanilla JS and flexbox</p>
+                            <a class="portfolio-box" href="https://github.com/cerita/simple-calculator" target="_blank">Repo</a> |
+                            <a class="portfolio-box" href="https://cerita.github.io/simple-calculator" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
             <!--END ROW 1 -->
-            <div class="row no-gutters">                
+            <div class="row no-gutters">
                 <div class="col-lg-6 col-sm-12 portfolio-box">
-					<img class="img-fluid" src="assets/quote-generator.png" alt="Quote Generator">
+					<img class="img-fluid image" src="assets/quote-generator.png" alt="Quote Generator">
                     <div class="overlay">
-                        <div class='overlay-text'> 
+                        <div class='overlay-text'>
                            <h2>Quote Generator</h2>
                             <p>Generate a random dance-themed quote with a click of a button. Built with HTML, CSS, JavaScript</p>
-                            <a class="portfolio-box" href="https://github.com/cerita/QuoteGenerator" target="_blank">Repo</a> | 
-                            <a class="portfolio-box" href="https://cerita.github.io/QuoteGenerator" target="_blank">Demo</a> 
+                            <a class="portfolio-box" href="https://github.com/cerita/QuoteGenerator" target="_blank">Repo</a> |
+                            <a class="portfolio-box" href="https://cerita.github.io/QuoteGenerator" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
 
-                
+
 
                 <div class="col-lg-6 col-sm-12 portfolio-box">
-                    <img class="img-fluid" src="assets/weather-app.png" alt="Weather App">
+                    <img class="img-fluid image" src="assets/weather-app.png" alt="Weather App">
                     <div class="overlay">
-                        <div class='overlay-text'> 
+                        <div class='overlay-text'>
                           <h2> Weather App </h2>
                           <p>Displays the weather in your current location. Uses forecast.io API and Google Maps API</p>
-                            <a class="portfolio-box" href="https://github.com/cerita/weather-app" target="_blank">Repo</a> | 
-                            <a class="portfolio-box" href="https://cerita.github.io/weather-app" target="_blank">Demo</a> 
+                            <a class="portfolio-box" href="https://github.com/cerita/weather-app" target="_blank">Repo</a> |
+                            <a class="portfolio-box" href="https://cerita.github.io/weather-app" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!--END ROW 2 -->
-            <div class="row no-gutters"> 
+            <div class="row no-gutters">
                 <div class="col-lg-6 col-sm-12 portfolio-box">
-                    <img class="img-fluid" src="assets/wiki-viewer.png" alt="Wikipedia Viewer">
+                    <img class="img-fluid image" src="assets/wiki-viewer.png" alt="Wikipedia Viewer">
                     <div class="overlay">
-                        <div class='overlay-text'> 
+                        <div class='overlay-text'>
                            <h2>Wikipedia Viewer</h2>
                             <p>Uses the Wikipedia API to display results for a search term or let you view a random Wikipedia article</p>
-                            <a class="portfolio-box" href="https://github.com/cerita/wiki-viewer" target="_blank">Repo</a> | 
-                            <a class="portfolio-box" href="https://cerita.github.io/wiki-viewer" target="_blank">Demo</a> 
+                            <a class="portfolio-box" href="https://github.com/cerita/wiki-viewer" target="_blank">Repo</a> |
+                            <a class="portfolio-box" href="https://cerita.github.io/wiki-viewer" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
@@ -193,23 +188,11 @@
         </div>
     </section>
     <!-- End Portfolio -->
-    <section id="map">
-        <section id="map">
-            <div class="container-fluid">
-                <h1>Map</h1>
-                <div id="map"></div>
-            </div>
-        </section>
-    </section>
-    <!-- End Map -->
+
     <section id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading">Let's Connect</h2>
-                    <hr>
-                </div>
-            </div>
+
+            <h1 class="section-heading">Let's Connect</h1>
                 <div class="row">
                     <div class="col-lg-3 col-3 ml-auto text-center">
                         <a href="mailto:ceritakelly@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
@@ -226,13 +209,22 @@
                 </div>
     </section>
     <!-- End Contact -->
+    <section id="map">
+        <section id="map">
+            <div class="container">
+                <h1>Map</h1>
+                <div id="map"></div>
+            </div>
+        </section>
+    </section>
+    <!-- End Map -->
     <!-- Footer -->
     <footer class="text-center ">
         <div class="footer-below ">
             <div class="container ">
                 <div class="row ">
                     <div class="col-lg-12 ">
-                        Made with &hearts; by Cerita Kelly 2017
+                        Made with &hearts; by Cerita Kelly 2018
                     </div>
                 </div>
             </div>
@@ -245,6 +237,14 @@
     <!-- Google Maps-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlDWFUupFk4HVhdCQ8kZQU19Q-mRRikUY&callback=initMap">
     </script>
+
+    <!-- jQuery -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!--Custon JS -->
+    <script type="text/javascript" src="js/script.min.js"></script>
+    <!-- Typewriter JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+
 </body>
 
 </html>

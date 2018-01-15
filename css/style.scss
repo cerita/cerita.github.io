@@ -1,8 +1,8 @@
-$navs: #eb0185;
-$purple: rgba(110, 71, 162, 0.9);
-$darkpurple: darken($purple, 10%);
-$gray: #EEE5FB;
-$black:#27153E;
+$light: #FBFCFD;
+$lightaccent:#D393B1;
+$main: #CE84FB;
+$darkaccent:#87817F;
+$dark:#49569A;
 
 * {
     margin: 0;
@@ -13,48 +13,64 @@ html,
 body,
 {
     font-family: "Open Sans", Arial, sans-serif;
-    color: $black;
+    background-color: $light;
+    color: $dark;
     margin: 0;
     padding: 0;
 }
 
 section {
-    padding: 100px 0;
+    // padding: 100px 0;
+    // margin-bottom: 100px;
+    margin-top: 100px;
+    min-height:40vh;
+    padding-top:72px;
     h1 {
-        font-size: 3.2em;
+      color:$main;
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom:32px;
+        border-bottom: 1px solid $main;
+        font-weight: 800;
     }
     h2 {
-        font-size: 2.8em;
+        font-size: 32px;
+        margin-bottom:24px;
+        font-weight: 500;
+    }
+    p{
+      font-size:20px;
     }
 }
 
 
 .btn {
-	background-color: $purple;
-	border-color: $purple;
+	background-color: $main;
+	border-color: $main;
+  color:$light;
 	&:hover {
-		background-color:$darkpurple;
-		border-color:$darkpurple;
+		background-color:darken($main, 10%);
+		border-color:darken($main, 10%);
+    color: $light;
 	}
     &:focus {
-        background-color: $purple;
-        border-color: $purple;
-        color:white;
+        background-color: $main;
+        border-color: $main;
     }
 }
 
 .btn-outline-primary {
-	background-color:#fff;
-	border-color: $purple;
-	color:$purple;
+	background-color:$light;
+	border-color: $main;
+	color:$main;
 	&:hover {
-		background-color: darken(#fff, 3%);
-		color:$darkpurple;
+		background-color: darken($light, 3%);
+		color:$main;
 	}
     &:focus {
-        background-color: $purple;
-        border-color: $purple;
-        color:white;
+        background-color: $main;
+        border-color: $main;
+        color:$light;
     }
 }
 
@@ -63,19 +79,42 @@ section {
 
 .navbar {
     margin: 0;
-    background-color:$gray;
+    // background-color:$light;
+    background-color: transparent;
     border-color:transparent;
     background-image:none;
-    box-shadow:none;  
+    box-shadow:none;
+    color: $main;
+    font-size:24px;
+    a {
+      color:$main;
+      letter-spacing: 4px;
+      margin-left:12px;
+      // font-size: 24px;
+
+      &:hover{
+        color:$darkaccent;
+        border-bottom: 1px solid $light;
+      }
+    }
+}
+
+.solid {
+  background-color: $light;
+
 }
 
 .navbar-brand {
-    font-size: 1.8em;
+    font-size: 32px;
 }
 
 @media screen and (max-width: 480px) {
-    .navbar-brand {
-        font-size: 24px;
+    // .navbar-brand {
+    //     font-size: 24px;
+    // }
+
+    .navbar{
+      background-color: $light;
     }
 
     .intro {
@@ -87,28 +126,47 @@ section {
 /****** Jumbotron ******/
 
 .intro {
-    min-height: 70vh;
-    background-color: $gray;
+    min-height: 100vh;
+    color:$main;
+    background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
     // background-image: url("../assets/gabriel-beaudry-93842.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    h1 {
+      font-size: 96px;
+      font-weight:800;
+      text-transform: uppercase;
+    }
     .container {
-        max-width: 50%;
+        // max-width: 85%;
         margin: 0 auto;
-        padding-top: 10%;
+        padding-top: 15%;
         h1,
         h2 {
             margin-bottom: 1em;
         }
-        .btn {}
     }
 }
 
+/****** about ******/
 
+#about {
+  p{
+    a {
+      color:$lightaccent;
+    }
+  }
+  img {
+    border: 5px solid $main;
+  }
+}
 
 
 /****** Skills ******/
-
+#skills {
+  background-color: $light;
+  color: $dark;
+}
 .skill-box {
     max-width: 450px;
     margin: 60px auto;
@@ -128,20 +186,25 @@ section {
 
 .image {
   display: block;
-  min-width: 100%;
+  max-width: 96%;
   height: auto;
+  padding:5px;
 }
 
 .overlay {
+  color:$light;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  max-width: 96%;
   opacity: 0;
   transition: .5s ease;
-  background-color: $gray;
+  background-color: $lightaccent;
+  a {
+    color:$light;
+  }
 }
 
 .portfolio-box {
@@ -155,10 +218,10 @@ section {
 
 .overlay-text {
     // color: #fff;
-  font-size: 1em;
+  font-size: 16px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
@@ -168,6 +231,7 @@ section {
 #map {
     width: 100%;
     height: 400px;
+    background-color: $dark;
 }
 
 @media screen and (max-width: 480px) {
@@ -185,10 +249,12 @@ section {
 /****** Contact ******/
 
 #contact {
+  h2 {
+  }
     a {
-    	color: #333;
+    	color: $dark;
     	&:hover {
-    		color: $purple;
+    		color: $darkaccent;
     	}
         i {
             font-size: 5em;
@@ -201,5 +267,6 @@ section {
 
 footer {
     padding: 1em 0;
-    background-color: $gray;
+    background-color: $main;
+    color: $light;
 }

@@ -18,25 +18,34 @@ function initMap() {
     });
 }
 
-console.log("working js");
+// console.log("working js");
 
 
-//TypeWriter
+//Make navbar solid on scroll
+window.onscroll = function () {
+  var navbar = document.getElementById("nav-bar");
+  var winHeight = window.innerHeight;
+  var scrollPos = window.scrollY;
+  if(scrollPos > (winHeight - 48)) {
+    navbar.classList.add("solid");
+  } else {
+    navbar.classList.remove("solid");
+  }
+};
+
 
 window.onload = function() {
+
     // Typewriter JS
     var yoSoy = document.getElementById('yoSoy');
 
     var typewriter = new Typewriter(yoSoy, {
-        loop: true
+        loop: false
     });
 
-    typewriter.typeString('Web Developer')
-        .pauseFor(2500)
-        .deleteAll()
-        .typeString('Front End Web Developer')
-        .pauseFor(2500)
-        .deleteAll()
-        .typeString('UI Developer')
+    typewriter.typeString('Front End Developer')
+        // .pauseFor(2500)
+        // .deleteAll()
+        // .typeString('')
         .start();
 }
