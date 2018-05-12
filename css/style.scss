@@ -126,7 +126,7 @@ section {
 /****** Jumbotron ******/
 
 .intro {
-    min-height: 100vh;
+    min-height: 65vh;
     color:$main;
     background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
     // background-image: url("../assets/gabriel-beaudry-93842.jpg");
@@ -148,6 +148,13 @@ section {
     }
 }
 
+
+@media screen and (min-width: 1025px) {
+    .intro {
+        min-height: 99vh;
+    }
+}
+
 /****** about ******/
 
 #about {
@@ -159,6 +166,13 @@ section {
   img {
     border: 5px solid $main;
   }
+}
+
+@media screen and (min-width: 600px) {
+    
+    .bio {
+        margin-top: 2em;
+    }
 }
 
 

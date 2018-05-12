@@ -83,7 +83,7 @@ section {
     padding-top: 20%; } }
 /****** Jumbotron ******/
 .intro {
-  min-height: 100vh;
+  min-height: 65vh;
   color: #CE84FB;
   background-image: url("https://www.transparenttextures.com/patterns/skulls.png"); }
   .intro h1 {
@@ -97,12 +97,18 @@ section {
     .intro .container h2 {
       margin-bottom: 1em; }
 
+@media screen and (min-width: 1025px) {
+  .intro {
+    min-height: 99vh; } }
 /****** about ******/
 #about p a {
   color: #D393B1; }
 #about img {
   border: 5px solid #CE84FB; }
 
+@media screen and (min-width: 600px) {
+  .bio {
+    margin-top: 2em; } }
 /****** Skills ******/
 #skills {
   background-color: #FBFCFD;
