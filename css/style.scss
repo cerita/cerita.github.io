@@ -1,8 +1,8 @@
-$light: #FBFCFD;
-$lightaccent:#D393B1;
-$main: #CE84FB;
-$darkaccent:#87817F;
-$dark:#49569A;
+$light: #F1F3F0;
+$lightaccent:#E2B925;
+$main: #E7A18C;
+$darkaccent:#D32F36;
+$dark:#201E24;
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@ $dark:#49569A;
 }
 
 html,
-body,
+body
 {
     font-family: "Open Sans", Arial, sans-serif;
     background-color: $light;
@@ -45,8 +45,8 @@ section {
 
 
 .btn {
-	background-color: $main;
-	border-color: $main;
+	background-color: $lightaccent;
+	border-color: $lightaccent;
   color:$light;
 	&:hover {
 		background-color:darken($main, 10%);
@@ -79,7 +79,6 @@ section {
 
 .navbar {
     margin: 0;
-    // background-color:$light;
     background-color: transparent;
     border-color:transparent;
     background-image:none;
@@ -99,13 +98,17 @@ section {
     }
 }
 
+.fa-reorder {
+  color:$main;
+}
+
 .solid {
   background-color: $light;
-
+  border-bottom:0.1px solid darken($light, 20%);
 }
 
 .navbar-brand {
-    font-size: 32px;
+    font-size: 1em;
 }
 
 @media screen and (max-width: 480px) {
@@ -143,7 +146,7 @@ section {
         padding-top: 15%;
         h1,
         h2 {
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
         }
     }
 }
@@ -160,7 +163,7 @@ section {
 #about {
   p{
     a {
-      color:$lightaccent;
+      color:$darkaccent;
     }
   }
   img {
@@ -251,10 +254,10 @@ section {
 @media screen and (max-width: 480px) {
     .overlay-text {
         h2 {
-            font-size:24px;
+            font-size:1.3em;
         }
         p {
-            display:none;
+            font-size:0.7em;
         }
     }
 }
@@ -263,8 +266,6 @@ section {
 /****** Contact ******/
 
 #contact {
-  h2 {
-  }
     a {
     	color: $dark;
     	&:hover {
