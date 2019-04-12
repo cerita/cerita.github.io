@@ -15,7 +15,7 @@ section {
   min-height: 40vh;
   padding-top: 72px; }
   section h1 {
-    color: #E7A18C;
+    color: #D32F36;
     font-size: 48px;
     text-transform: uppercase;
     margin-bottom: 32px;
@@ -154,12 +154,13 @@ section {
     opacity: 1; }
 
 .overlay-text {
-  font-size: 16px;
+  font-size: 0.8em;
   position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); }
+  padding: 0.5em; }
+  .overlay-text h2 {
+    font-size: 1.8em; }
+  .overlay-text p {
+    font-size: 1.2em; }
 
 /****** MAP ******/
 #map {
@@ -174,7 +175,7 @@ section {
     font-size: 0.7em; } }
 /****** Contact ******/
 #contact a {
-  color: #201E24; }
+  color: #E7A18C; }
   #contact a:hover {
     color: #D32F36; }
   #contact a i {
