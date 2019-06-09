@@ -5,7 +5,7 @@
 html,
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  background-color: #F1F3F0;
+  background-color: #fdfdfd;
   color: #201E24;
   margin: 0;
   padding: 0; }
@@ -31,17 +31,17 @@ section {
 .btn {
   background-color: #E2B925;
   border-color: #E2B925;
-  color: #F5F5F5; }
+  color: #fdfdfd; }
   .btn:hover {
     background-color: #de7f62;
     border-color: #de7f62;
-    color: #F5F5F5; }
+    color: #fdfdfd; }
   .btn:focus {
     background-color: #E7A18C;
     border-color: #E7A18C; }
 
 .btn-outline-primary {
-  background-color: #F5F5F5;
+  background-color: #fdfdfd;
   border-color: #E7A18C;
   color: #E7A18C; }
   .btn-outline-primary:hover {
@@ -50,7 +50,7 @@ section {
   .btn-outline-primary:focus {
     background-color: #E7A18C;
     border-color: #E7A18C;
-    color: #F5F5F5; }
+    color: #fdfdfd; }
 
 /****** NAV ******/
 .navbar {
@@ -67,13 +67,13 @@ section {
     margin-left: 12px; }
     .navbar a:hover {
       color: #D32F36;
-      border-bottom: 1px solid #F5F5F5; }
+      border-bottom: 1px solid #fdfdfd; }
 
 .fa-reorder {
   color: #E7A18C; }
 
 .solid {
-  background-color: #F5F5F5;
+  background-color: #fdfdfd;
   border-bottom: 0.1px solid #bcc6b7; }
 
 .navbar-brand {
@@ -81,7 +81,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .navbar {
-    background-color: #F5F5F5; }
+    background-color: #fdfdfd; }
 
   .intro {
     padding-top: 20%; } }
