@@ -1,0 +1,24 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    background-color: #FFFCFA;
+}
+.container {
+    max-width: 60%;
+    height: 100vh;
+    margin-left:2em;
+}
+
+h1,h2,h3, {
+    font-weight: 800;
+}
+
+a {
+    color:#d14454;
+    text-decoration: none;
+}
+
+.accent {
+    color:#d14454;
+}
