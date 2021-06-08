@@ -1,0 +1,200 @@
+$white-quartz:#fffdfd; //pinkish white
+$agate:#f5f5f5; //light gray
+$smoky-quartz:#2b2b2b; //dark gray
+$rose-quartz:#fad7da; //pink 
+$morganite:#fdeff0; //light pink
+
+
+//Global Palette
+$white: $white-quartz;
+$light-gray: $agate;
+$dark-gray: $smoky-quartz;
+
+
+$primary: $rose-quartz;
+$accent: $morganite;
+
+body {
+    margin: 0;
+    font-family: 'Quattrocento', serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-weight: normal;
+    background: $white;
+    color: $dark-gray;
+}
+
+.link,
+.link:link {
+    color: #2b2b2b;
+    text-decoration: none;
+    background-position-y: -0%;
+    background-image: linear-gradient(white 50%, $primary 50%);
+    transition: background 500ms ease;
+    background-size: 2px;
+    background-size: auto 175%;
+}
+
+.link:hover {
+    color: $dark-gray;
+    background-position-y: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+    color: $dark-gray;
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+.link {
+    color: $dark-gray;
+    text-decoration: none;
+    background-position-y: -0%;
+    background-image: linear-gradient($white 50%, $primary 50%);
+    transition: background 500ms ease;
+    background-size: 2px;
+    background-size: auto 175%;
+}
+
+.link:hover {
+    color: $dark-gray;
+    background-position-y: 100%;
+    text-decoration: none;
+}
+
+
+div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/*** NAV BAR ***/
+
+.logo {
+    max-height: 128px;
+}
+
+.bg-light {
+    background-color: $light-gray !important;
+
+}
+
+
+
+
+/*** BUTTONS ***/
+.btn {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.btn-primary {
+    color: $primary;
+    border-color: $dark-gray;
+    background-color: $dark-gray;
+}
+
+
+.btn-primary:hover {
+    color: $dark-gray;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: $dark-gray;
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem darken($primary, 3%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: $dark-gray;
+    background-color: darken($primary, 5%);
+    border-color: darken($primary, 5%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem darken($primary, 5%);
+}
+
+
+/*** INTRO ***/
+.intro-photo {
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 50%;
+}
+
+.text-highlighted {
+    background-color: $primary;
+}
+
+
+/*** FOOTER ***/
+footer {
+    background-color: $primary;
+    height: 60px;
+    position: fixed;
+    height: 120px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.footer-icon {
+    a {
+        color: $dark-gray;
+    }
+}
+
+
+
+/*** PORTFOLIO ***/
+.card {
+    // box-sizing: border-box;
+    border: none;
+    box-shadow: 2px 2px 10px 0px transparentize($color: $dark-gray, $amount: 0.7);
+    border-radius: 5px;
+
+    margin-bottom: 1.5em;
+}
+
+.card-button {
+    background-color: $light-gray;
+}
